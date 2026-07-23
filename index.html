@@ -1,23 +1,233 @@
 <!doctype html>
 <html lang="ko">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>모하영 | Backend Developer Portfolio</title>
     <meta
       name="description"
-      content="Java/Spring Boot 백엔드 개발자 모하영의 포트폴리오입니다. PlusHome 프로젝트와 AI 추천 서비스 확장 경험을 정리했습니다."
+      content="Java/Spring 기반 웹 백엔드 개발 경험을 바탕으로 검색·추천 기능을 구현하고 AI 검색 서비스로 확장해가는 개발자 모하영의 포트폴리오입니다."
     />
-    <meta name="author" content="Mo Hayoung" />
-    <meta property="og:title" content="Mo Hayoung | Backend Portfolio" />
-    <meta
-      property="og:description"
-      content="Spring Boot 기반 서비스 개발과 RAG 기반 AI 추천 기능 확장 경험을 담은 개발자 포트폴리오"
-    />
-    <meta property="og:type" content="website" />
-    <title>Mo Hayoung | Backend Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <header class="site-header">
+      <nav class="nav" aria-label="주요 이동">
+        <a class="brand" href="#top">MO HAYOUNG</a>
+        <div class="nav-links">
+          <a href="#projects">Projects</a>
+          <a href="#ai">AI</a>
+          <a href="#skills">Skills</a>
+          <a href="#documents">Documents</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Backend Developer</p>
+          <h1 id="hero-title">Java/Spring 기반 웹 서비스에서 AI 검색 기능까지 확장해가는 개발자입니다.</h1>
+          <p class="intro">
+            6개월 학습과정에서 Java, Spring Boot, MyBatis, Oracle DB, React를 학습하며 세 차례의 팀
+            프로젝트를 수행했습니다. 사용자의 입력이 화면, API, 서버 로직, DB를 거쳐 결과로 돌아오는
+            처리 구조를 구현했고, 현재는 머신러닝·딥러닝·LLM·RAG를 학습하며 검색과 추천 기능을 AI
+            서비스로 확장하는 방법을 익히고 있습니다.
+          </p>
+          <div class="hero-actions" aria-label="대표 링크">
+            <a class="button primary" href="https://github.com/HayoungMo" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            <a class="button" href="./assets/resume-backend.pdf" target="_blank" rel="noreferrer">
+              이력서 PDF
+            </a>
+            <a class="button" href="./assets/plushome-mini.pdf" target="_blank" rel="noreferrer">
+              미니 포트폴리오
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-side" aria-label="기본 정보">
+          <img class="profile-photo" src="./assets/profile.jpeg" alt="모하영 프로필 사진" />
+          <div class="quick-info">
+            <p><strong>Email</strong><span>mohayoung80@gmail.com</span></p>
+            <p><strong>GitHub</strong><span>github.com/HayoungMo</span></p>
+            <p><strong>Focus</strong><span>Java · Spring Boot · Oracle DB · RAG</span></p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section band" aria-labelledby="strength-title">
+        <div class="section-head">
+          <p class="eyebrow">Core Strength</p>
+          <h2 id="strength-title">제가 강하게 가져가는 개발 방식</h2>
+        </div>
+        <div class="strength-grid">
+          <article>
+            <h3>처리 구조를 나누어 이해합니다</h3>
+            <p>
+              기능을 화면 구현으로만 보지 않고, 사용자 입력과 URL 파라미터, REST API, 서버 로직, Mapper
+              쿼리, DB 저장 기준이 어떻게 연결되는지 나누어 확인합니다.
+            </p>
+          </article>
+          <article>
+            <h3>문제 원인을 단계적으로 좁힙니다</h3>
+            <p>
+              오류가 발생하면 화면 증상만 수정하지 않고 브라우저 요청 값, 서버 로그, 쿼리, DB 데이터를
+              순서대로 확인하며 원인을 추적합니다.
+            </p>
+          </article>
+          <article>
+            <h3>팀 기준을 맞춰 결과물을 완성합니다</h3>
+            <p>
+              세 차례의 팀 프로젝트에서 팀장을 맡아 작업 범위, 커밋 시점, API 응답 구조, 공통 개발
+              기준을 정리하며 기능 통합을 조율했습니다.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div class="section-head">
+          <p class="eyebrow">Featured Project</p>
+          <h2 id="projects-title">PlusHome</h2>
+          <p>
+            PlusHome은 가구 쇼핑과 인테리어 상담을 하나의 플랫폼에서 제공하는 6인 팀 프로젝트입니다.
+            저는 팀장으로 참여하며 메인 화면 일부, 통합 검색, 조건 기반 검색/필터, 상품 문의, 추천 및 숨김,
+            챗봇 검색 연계를 담당했습니다.
+          </p>
+        </div>
+
+        <div class="project-layout">
+          <article class="project-summary">
+            <div class="project-meta" aria-label="프로젝트 정보">
+              <span>2026.04.27 ~ 2026.06.15</span>
+              <span>Team Leader</span>
+              <span>React · Spring Boot · MyBatis · Oracle DB</span>
+            </div>
+            <h3>사용자의 검색, 문의, 개인화 선택을 하나의 서비스 흐름으로 구현</h3>
+            <p>
+              통합 검색에서는 사용자가 키워드를 입력하면 관련 가구 상품과 인테리어 콘텐츠가 함께
+              조회되도록 구현했습니다. 조건 기반 검색/필터에서는 지역, 주거 유형, 면적, 예산 등의 선택
+              조건을 URL QueryString과 API 요청으로 전달하고, 새로고침 후에도 조건이 유지되도록
+              처리했습니다.
+            </p>
+            <p>
+              상품 문의 기능에서는 문의 작성, 목록 조회, 상세 확인, 이미지 첨부, 비밀글 여부, 답변 상태
+              표시를 구현했습니다. 이미지 첨부는 FormData 기반 multipart 전송을 활용했고, 문의 데이터가
+              서버와 DB에 저장된 뒤 화면에 다시 반영되는 구조를 확인하며 구현했습니다.
+            </p>
+            <p>
+              추천 및 숨김 기능은 사용자의 선택이 재접속 후에도 유지되어야 한다고 판단해 브라우저 로컬
+              저장이 아니라 DB에 저장되도록 구현했습니다. 이를 통해 개인화 기능에서는 화면 상태뿐 아니라
+              저장 데이터의 기준을 일관되게 관리하는 것이 중요하다는 점을 배웠습니다.
+            </p>
+            <div class="link-row">
+              <a href="https://github.com/HayoungMo/PlusHome" target="_blank" rel="noreferrer">
+                PlusHome GitHub
+              </a>
+              <a href="./assets/plushome-full.pdf" target="_blank" rel="noreferrer">
+                전체 포트폴리오 PDF
+              </a>
+            </div>
+          </article>
+
+          <aside class="flow-panel" aria-label="PlusHome 처리 구조">
+            <p class="panel-title">처리 구조</p>
+            <div class="flow-node">React 화면</div>
+            <div class="flow-arrow" aria-hidden="true">↓</div>
+            <div class="flow-node">REST API 요청</div>
+            <div class="flow-arrow" aria-hidden="true">↓</div>
+            <div class="flow-node">Spring Boot Service</div>
+            <div class="flow-arrow" aria-hidden="true">↓</div>
+            <div class="flow-node">MyBatis Mapper</div>
+            <div class="flow-arrow" aria-hidden="true">↓</div>
+            <div class="flow-node">Oracle DB</div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="ai" class="section" aria-labelledby="ai-title">
+        <div class="section-head">
+          <p class="eyebrow">AI Learning Projects</p>
+          <h2 id="ai-title">AI 기술을 서비스 기능으로 연결하는 학습</h2>
+          <p>
+            AI 심화과정에서 머신러닝, 딥러닝, LLM, RAG를 학습하고 있습니다. 아직 실무 수준의 AI 개발
+            경험으로 과장하기보다, 데이터 처리와 검색, 응답 생성이 기존 웹 서비스 기능에 어떻게 연결될 수
+            있는지 이해하고 적용해보는 과정으로 정리하고 있습니다.
+          </p>
+        </div>
+
+        <div class="project-cards">
+          <article>
+            <p class="tag">Machine Learning</p>
+            <h3>학생 성적 예측 및 학업 위험군 분류</h3>
+            <p>
+              UCI Student Performance Dataset을 활용해 데이터 전처리, 회귀/분류 모델 비교, 성능 확인을
+              수행했습니다. 모델 결과만 보는 것이 아니라 어떤 입력 변수가 예측에 영향을 주는지 확인하는
+              방식으로 학습했습니다.
+            </p>
+            <a href="https://github.com/HayoungMo/ml_mohayoung_project" target="_blank" rel="noreferrer">
+              Repository
+            </a>
+          </article>
+          <article>
+            <p class="tag">Deep Learning · RAG · LLM</p>
+            <h3>가구 이미지 분류와 RAG 기반 추천 챗봇</h3>
+            <p>
+              이미지 분류 결과를 기반으로 관련 문서를 검색하고, Gemini API와 연동해 답변을 생성하는
+              구조를 구현했습니다. API 연결이 불가능한 경우에는 RAG 기반 답변을 제공하도록 구성했습니다.
+            </p>
+            <a href="https://github.com/HayoungMo/llm_mohayoung_project" target="_blank" rel="noreferrer">
+              Repository
+            </a>
+          </article>
+          <article>
+            <p class="tag">Final Team Project</p>
+            <h3>AI 기반 공고 검색 서비스</h3>
+            <p>
+              현재 팀 프로젝트에서 벡터 검색과 RAG 구조를 활용한 자연어 검색 기능을 구현하고 있습니다.
+              검색 결과에 추천 근거를 함께 제공하고, 지역명 오타 보정과 검색 조건 개선을 통해 검색 품질을
+              높이는 방법을 다루고 있습니다.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section band" aria-labelledby="skills-title">
+        <div class="section-head">
+          <p class="eyebrow">Skills</p>
+          <h2 id="skills-title">기술 스택</h2>
+        </div>
+        <div class="skill-list">
+          <p><strong>Backend</strong><span>Java, Spring Boot, JSP, Servlet, MyBatis, REST API</span></p>
+          <p><strong>Frontend</strong><span>React, JavaScript, HTML, CSS, jQuery, Bootstrap</span></p>
+          <p><strong>Database</strong><span>Oracle DB, SQL, MySQL, MariaDB, MongoDB</span></p>
+          <p><strong>AI / Data</strong><span>Python, Machine Learning, Deep Learning, LLM, RAG</span></p>
+          <p><strong>Tools</strong><span>GitHub, Gradle, VS Code, STS</span></p>
+        </div>
+      </section>
+
+      <section id="documents" class="section documents" aria-labelledby="documents-title">
+        <div class="section-head">
+          <p class="eyebrow">Documents</p>
+          <h2 id="documents-title">제출용 문서</h2>
+          <p>
+            공고 성격에 따라 이력서, 미니 포트폴리오, 전체 포트폴리오 PDF를 함께 제출할 수 있도록
+            정리했습니다.
+          </p>
+        </div>
+        <div class="document-links">
+          <a href="./assets/resume-backend.pdf" target="_blank" rel="noreferrer">이력서 PDF</a>
+          <a href="./assets/plushome-mini.pdf" target="_blank" rel="noreferrer">PlusHome 미니 포트폴리오</a>
+          <a href="./assets/plushome-full.pdf" target="_blank" rel="noreferrer">PlusHome 전체 포트폴리오</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Mo Hayoung. Built for GitHub Pages.</p>
+    </footer>
   </body>
 </html>
