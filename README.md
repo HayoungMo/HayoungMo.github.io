@@ -1,40 +1,54 @@
 # Mo Hayoung Portfolio
 
-GitHub Pages로 배포하는 개인 포트폴리오 사이트입니다.
+GitHub Pages로 배포하는 개인 포트폴리오 사이트입니다.  
+대문에서 `About`과 `Portfolio`로 나뉘고, 포트폴리오 페이지에서는 Fullstack 프로젝트와 AI 프로젝트를 구분해 보여줍니다.
 
 - Site: https://hayoungmo.github.io/
 - About: https://hayoungmo.github.io/about.html
 - Portfolio: https://hayoungmo.github.io/portfolio.html
 - GitHub: https://github.com/HayoungMo
 
-## 구성
+## Page Structure
 
-- `index.html`: About과 Portfolio로 이동하는 대문 페이지
-- `about.html`: 자기소개, 개발 방식, 기술 스택, 이력서 링크를 정리한 소개 페이지
-- `portfolio.html`: Fullstack/AI 프로젝트 모음, 시연 영상, GitHub README, PDF 링크를 정리한 포트폴리오 페이지
-- `style.css`: 공통 스타일
-- `assets/`: 이력서, 프로젝트 PDF, 프로필 이미지
+| Page | Role |
+| --- | --- |
+| `index.html` | 대문 페이지. 큰 타이포와 `M H` 워터마크로 첫인상을 만들고 About/Portfolio로 이동합니다. |
+| `about.html` | 자기소개, 개발 방식, 기술 스택, 이력서 링크를 정리합니다. |
+| `portfolio.html` | Fullstack/AI 프로젝트, 영상 영역, GitHub README, PDF 링크를 정리합니다. |
 
-## 프로젝트 자료
+## Project Groups
 
-- Fullstack: PlusHome
-- AI Projects: Machine Learning, Deep Learning, LLM/RAG, Final Project
+### Fullstack
 
-## 수정과 배포
+- PlusHome
 
-로컬에서 파일을 수정한 뒤 아래 순서로 반영합니다.
+### AI Projects
 
-```bash
-git add .
-git commit -m "Update portfolio"
-git push origin main
+- Machine Learning: 학생 성적 예측 및 위험군 분류
+- Deep Learning: CNN 기반 가구 이미지 카테고리 분류
+- LLM/RAG: 이미지 분류와 RAG 기반 가구 추천 챗봇
+- Final Project: AI 기반 공고 검색 서비스
+
+## Assets
+
+`assets/` 폴더에는 이력서, 프로젝트 PDF, 프로필 이미지를 둡니다.
+
+```text
+assets/
+  resume-backend.pdf
+  plushome-full.pdf
+  plushome-mini.pdf
+  ML PRJ_MHY.pdf
+  DL PRJ_MHY.pdf
+  LLM PRJ_MHY.pdf
+  profile.jpeg
 ```
 
-`main` 브랜치에 push하면 GitHub Actions가 `index.html`, `about.html`, `portfolio.html`, `style.css`, `assets` 폴더를 GitHub Pages로 배포합니다.
+PDF 파일을 같은 이름으로 교체하면 HTML 링크는 그대로 두고 PDF만 commit/push하면 됩니다.
 
-## 영상 연결 방법
+## Video Embed
 
-YouTube에 영상을 일부 공개로 업로드한 뒤 `portfolio.html`의 영상 영역을 iframe으로 교체합니다.
+YouTube에 영상을 일부 공개로 업로드한 뒤 `portfolio.html`의 `video-frame pending` 영역을 iframe으로 교체합니다.
 
 ```html
 <iframe
@@ -45,4 +59,15 @@ YouTube에 영상을 일부 공개로 업로드한 뒤 `portfolio.html`의 영�
 </iframe>
 ```
 
-PDF 파일을 같은 이름으로 교체하면 HTML 링크는 그대로 두고 PDF 파일만 commit/push하면 됩니다.
+## Deploy
+
+로컬에서 수정한 뒤 아래 순서로 반영합니다.
+
+```bash
+git status -sb
+git add .
+git commit -m "Update portfolio"
+git push origin main
+```
+
+`main` 브랜치에 push하면 GitHub Actions가 `index.html`, `about.html`, `portfolio.html`, `style.css`, `assets` 폴더를 GitHub Pages로 배포합니다.
