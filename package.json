@@ -2,6 +2,7 @@
   "name": "hayoungmo-portfolio",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "Java/Spring Boot backend developer portfolio with AI service extension projects.",
   "scripts": {
     "dev": "vite",

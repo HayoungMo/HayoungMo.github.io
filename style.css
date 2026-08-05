@@ -141,7 +141,9 @@ h3 {
 
 .hero-actions,
 .document-links,
-.card-actions {
+.card-actions,
+.detail-actions,
+.section-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -150,7 +152,9 @@ h3 {
 .button,
 .document-links a,
 .card-actions a,
-.card-actions span {
+.card-actions span,
+.detail-actions a,
+.detail-actions span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -167,13 +171,15 @@ h3 {
 
 .button.primary,
 .document-links a:first-child,
-.card-actions a {
+.card-actions a,
+.detail-actions a {
   background: var(--ink);
   color: #fff;
   border-color: var(--ink);
 }
 
-.card-actions span {
+.card-actions span,
+.detail-actions span {
   color: var(--muted);
   background: var(--soft);
   box-shadow: none;
@@ -238,6 +244,10 @@ h3 {
 .section-head > p:not(.eyebrow) {
   color: var(--muted);
   font-size: 17px;
+}
+
+.section-actions {
+  margin-top: 22px;
 }
 
 .proof-grid,
@@ -456,6 +466,151 @@ h3 {
   padding-bottom: 96px;
 }
 
+.page-hero {
+  padding: 82px 0 56px;
+}
+
+.page-hero h1 {
+  max-width: 940px;
+}
+
+.overview-section {
+  padding-top: 54px;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.overview-card {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  min-height: 168px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: 0 10px 24px rgba(31, 41, 55, 0.05);
+}
+
+.overview-card span {
+  color: var(--teal);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.overview-card strong {
+  color: var(--ink);
+  font-size: 19px;
+  line-height: 1.35;
+}
+
+.overview-card small {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.portfolio-work {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+  gap: 30px;
+  align-items: stretch;
+  padding: 56px 0;
+  border-top: 1px solid var(--line);
+}
+
+.video-shell {
+  min-width: 0;
+}
+
+.video-frame {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #111827;
+  color: #fff;
+  overflow: hidden;
+}
+
+.video-frame.pending {
+  align-content: center;
+  gap: 6px;
+  background:
+    linear-gradient(135deg, rgba(23, 126, 137, 0.16), rgba(200, 90, 74, 0.18)),
+    #192230;
+}
+
+.video-frame strong {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.video-frame span {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.video-frame iframe,
+iframe.video-frame {
+  display: block;
+  border: 0;
+}
+
+.detail-copy {
+  min-width: 0;
+  display: grid;
+  align-content: start;
+  gap: 16px;
+}
+
+.detail-copy h2 {
+  margin-bottom: 0;
+}
+
+.detail-copy > p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.detail-list {
+  display: grid;
+  gap: 10px;
+  margin: 6px 0 0;
+}
+
+.detail-list div {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 16px;
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+}
+
+.detail-list dt {
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.detail-list dd {
+  margin: 0;
+  color: var(--muted);
+}
+
+.detail-actions {
+  margin-top: 4px;
+}
+
 .footer {
   padding: 32px 20px 44px;
   border-top: 1px solid var(--line);
@@ -473,8 +628,13 @@ h3 {
   .featured-project,
   .proof-grid,
   .project-grid,
-  .timeline {
+  .timeline,
+  .portfolio-work {
     grid-template-columns: 1fr;
+  }
+
+  .overview-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .hero {
@@ -526,12 +686,18 @@ h3 {
   .featured-project,
   .resource-panel,
   .proof-grid article,
-  .project-card {
+  .project-card,
+  .overview-card {
     padding: 20px;
   }
 
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+
   .skill-list p,
-  .quick-info p {
+  .quick-info p,
+  .detail-list div {
     grid-template-columns: 1fr;
     gap: 4px;
   }

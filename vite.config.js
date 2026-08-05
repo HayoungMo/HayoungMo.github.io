@@ -5,4 +5,12 @@ export default defineConfig({
   plugins: [react()],
   base: "/",
   cacheDir: ".vite-cache",
+  build: {
+    rollupOptions: {
+      input: {
+        main: "index.html",
+        portfolio: "portfolio.html",
+      },
+    },
+  },
 });

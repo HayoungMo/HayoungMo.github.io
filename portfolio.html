@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Portfolio | 모하영</title>
+    <meta
+      name="description"
+      content="모하영의 PlusHome, 머신러닝, 딥러닝, LLM/RAG 프로젝트를 영상, GitHub, PDF 자료로 모아둔 포트폴리오 페이지입니다."
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="주요 이동">
+        <a class="brand" href="./index.html#top">MO HAYOUNG</a>
+        <div class="nav-links">
+          <a href="./index.html">Home</a>
+          <a href="./portfolio.html">Portfolio</a>
+          <a href="./index.html#skills">Skills</a>
+          <a href="./index.html#documents">Documents</a>
+          <a href="https://github.com/HayoungMo/HayoungMo.github.io#readme" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero" aria-labelledby="portfolio-title">
+        <p class="eyebrow">Project Library</p>
+        <h1 id="portfolio-title">프로젝트를 한눈에 보고, 필요한 자료로 바로 이동합니다.</h1>
+        <p class="intro">
+          각 프로젝트는 시연 영상, 핵심 설명, 사용 기술, GitHub README, PDF 문서를 같은 흐름으로 확인할 수 있게 정리했습니다.
+          영상은 YouTube 일부 공개 업로드 후 이 영역에 바로 연결할 예정입니다.
+        </p>
+      </section>
+
+      <section class="section overview-section" aria-labelledby="overview-title">
+        <div class="section-head">
+          <p class="eyebrow">Overview</p>
+          <h2 id="overview-title">프로젝트 모음</h2>
+        </div>
+
+        <div class="overview-grid">
+          <a class="overview-card" href="#plushome">
+            <span>Team Project</span>
+            <strong>PlusHome</strong>
+            <small>가구 쇼핑과 인테리어 상담 웹 서비스</small>
+          </a>
+          <a class="overview-card" href="#machine-learning">
+            <span>Machine Learning</span>
+            <strong>학생 성적 예측</strong>
+            <small>전처리, 회귀/분류 모델 비교, 성능 평가</small>
+          </a>
+          <a class="overview-card" href="#deep-learning">
+            <span>Deep Learning</span>
+            <strong>가구 이미지 분류</strong>
+            <small>CIFAR-100 기반 CNN 이미지 분류</small>
+          </a>
+          <a class="overview-card" href="#llm-rag">
+            <span>LLM/RAG</span>
+            <strong>가구 추천 챗봇</strong>
+            <small>이미지 분류, RAG 검색, 답변 생성</small>
+          </a>
+          <a class="overview-card" href="#ai-search">
+            <span>Final Project</span>
+            <strong>AI 공고 검색</strong>
+            <small>벡터 검색과 RAG 기반 자연어 검색</small>
+          </a>
+        </div>
+      </section>
+
+      <section id="plushome" class="portfolio-work" aria-labelledby="plushome-title">
+        <div class="video-shell">
+          <div class="video-frame pending">
+            <strong>PlusHome Demo</strong>
+            <span>YouTube 영상 준비 중</span>
+          </div>
+        </div>
+
+        <div class="detail-copy">
+          <div class="project-meta">
+            <span>Team Project</span>
+            <span>Team Leader</span>
+            <span>2026.04 - 2026.06</span>
+          </div>
+          <h2 id="plushome-title">PlusHome</h2>
+          <p>
+            가구 쇼핑과 인테리어 상담을 하나의 흐름으로 제공하는 웹 서비스입니다. 검색, 조건 필터, 상품 문의,
+            추천 및 즐겨찾기 기능을 담당했고 팀장으로 기능 통합과 작업 기준을 조율했습니다.
+          </p>
+          <dl class="detail-list">
+            <div>
+              <dt>담당 기능</dt>
+              <dd>통합 검색, 조건 필터, 상품 문의, 이미지 첨부, 추천/숨김, 즐겨찾기</dd>
+            </div>
+            <div>
+              <dt>사용 기술</dt>
+              <dd>React, JavaScript, Spring Boot, MyBatis, Oracle DB, REST API</dd>
+            </div>
+          </dl>
+          <div class="detail-actions">
+            <a href="https://github.com/HayoungMo/PlusHome#readme" target="_blank" rel="noreferrer">GitHub README</a>
+            <a href="./assets/plushome-mini.pdf" target="_blank" rel="noreferrer">Summary PDF</a>
+            <a href="./assets/plushome-full.pdf" target="_blank" rel="noreferrer">Full PDF</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="machine-learning" class="portfolio-work" aria-labelledby="ml-title">
+        <div class="video-shell">
+          <div class="video-frame pending">
+            <strong>ML Demo</strong>
+            <span>YouTube 영상 준비 중</span>
+          </div>
+        </div>
+
+        <div class="detail-copy">
+          <div class="project-meta">
+            <span>Machine Learning</span>
+            <span>Python</span>
+          </div>
+          <h2 id="ml-title">학생 성적 예측 및 위험군 분류</h2>
+          <p>
+            UCI Student Performance Dataset을 사용해 학습 데이터 전처리, 회귀/분류 모델 비교, 성능 평가를 수행했습니다.
+            모델 결과뿐 아니라 입력 변수가 예측에 어떤 영향을 주는지 확인하는 흐름으로 정리했습니다.
+          </p>
+          <dl class="detail-list">
+            <div>
+              <dt>핵심 흐름</dt>
+              <dd>데이터 전처리, 학습/테스트 분리, 모델 비교, 성능 지표 확인, 위험군 분류</dd>
+            </div>
+            <div>
+              <dt>사용 기술</dt>
+              <dd>Python, Pandas, Scikit-learn, Matplotlib, Streamlit</dd>
+            </div>
+          </dl>
+          <div class="detail-actions">
+            <a href="https://github.com/HayoungMo/ml_mohayoung_project#readme" target="_blank" rel="noreferrer">GitHub README</a>
+            <a href="./assets/ML%20PRJ_MHY.pdf" target="_blank" rel="noreferrer">Summary PDF</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="deep-learning" class="portfolio-work" aria-labelledby="dl-title">
+        <div class="video-shell">
+          <div class="video-frame pending">
+            <strong>DL Demo</strong>
+            <span>YouTube 영상 준비 중</span>
+          </div>
+        </div>
+
+        <div class="detail-copy">
+          <div class="project-meta">
+            <span>Deep Learning</span>
+            <span>CNN</span>
+          </div>
+          <h2 id="dl-title">CNN 기반 가구 이미지 카테고리 분류</h2>
+          <p>
+            CIFAR-100에서 가구 관련 클래스를 추출해 CNN 모델을 학습하고, 업로드 이미지의 가구 카테고리를 예측하는
+            딥러닝 분류 프로젝트입니다. 전처리, 모델 학습, 예측 결과 시각화, Streamlit 시연 흐름을 정리했습니다.
+          </p>
+          <dl class="detail-list">
+            <div>
+              <dt>핵심 흐름</dt>
+              <dd>CIFAR-100 필터링, 라벨 재매핑, CNN 학습, accuracy/loss 확인, Streamlit 예측</dd>
+            </div>
+            <div>
+              <dt>사용 기술</dt>
+              <dd>Python, TensorFlow/Keras, CNN, NumPy, Matplotlib, Streamlit</dd>
+            </div>
+          </dl>
+          <div class="detail-actions">
+            <a href="./assets/DL%20PRJ_MHY.pdf" target="_blank" rel="noreferrer">Summary PDF</a>
+            <span aria-disabled="true">GitHub 준비 중</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="llm-rag" class="portfolio-work" aria-labelledby="llm-title">
+        <div class="video-shell">
+          <div class="video-frame pending">
+            <strong>LLM/RAG Demo</strong>
+            <span>YouTube 영상 준비 중</span>
+          </div>
+        </div>
+
+        <div class="detail-copy">
+          <div class="project-meta">
+            <span>LLM</span>
+            <span>RAG</span>
+          </div>
+          <h2 id="llm-title">이미지 분류와 RAG 기반 가구 추천 챗봇</h2>
+          <p>
+            업로드한 가구 이미지를 분류하고, 예측 카테고리와 사용자 질문을 함께 사용해 관련 문서를 검색한 뒤
+            추천 답변을 생성하는 LLM/RAG 프로토타입입니다.
+          </p>
+          <dl class="detail-list">
+            <div>
+              <dt>핵심 흐름</dt>
+              <dd>이미지 업로드, MobileNetV2 분류, RAG 문서 검색, LLM 답변 생성, fallback 답변</dd>
+            </div>
+            <div>
+              <dt>사용 기술</dt>
+              <dd>Python, Streamlit, TensorFlow/Keras, TF-IDF, cosine similarity, Gemini/Groq/Ollama</dd>
+            </div>
+          </dl>
+          <div class="detail-actions">
+            <a href="https://github.com/HayoungMo/llm_mohayoung_project#readme" target="_blank" rel="noreferrer">GitHub README</a>
+            <a href="./assets/LLM%20PRJ_MHY.pdf" target="_blank" rel="noreferrer">Summary PDF</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="ai-search" class="portfolio-work" aria-labelledby="search-title">
+        <div class="video-shell">
+          <div class="video-frame pending">
+            <strong>Final Project Demo</strong>
+            <span>진행 중</span>
+          </div>
+        </div>
+
+        <div class="detail-copy">
+          <div class="project-meta">
+            <span>AI Search</span>
+            <span>Team Project</span>
+          </div>
+          <h2 id="search-title">AI 기반 공고 검색 서비스</h2>
+          <p>
+            벡터 검색과 RAG 구조를 활용해 자연어 검색 기능을 구현하는 팀 프로젝트입니다. 검색 결과와 추천 근거를 함께
+            보여주고, 지역명 오타 보정과 조건 검색 개선을 실험하고 있습니다.
+          </p>
+          <dl class="detail-list">
+            <div>
+              <dt>핵심 흐름</dt>
+              <dd>자연어 검색, 조건 추출, 벡터 검색, RAG 답변, 검색 결과 근거 표시</dd>
+            </div>
+            <div>
+              <dt>사용 기술</dt>
+              <dd>Spring Boot, Python, RAG, Vector Search, LLM, Database</dd>
+            </div>
+          </dl>
+          <div class="detail-actions">
+            <span aria-disabled="true">GitHub 준비 중</span>
+            <span aria-disabled="true">PDF 준비 중</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Mo Hayoung. Built for GitHub Pages.</p>
+    </footer>
+  </body>
+</html>
