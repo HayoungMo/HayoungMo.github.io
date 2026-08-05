@@ -536,16 +536,16 @@ h3 {
 
 .monogram {
   position: absolute;
-  top: 18%;
-  right: min(4vw, 54px);
+  top: 12%;
+  right: min(6vw, 78px);
   z-index: 1;
   display: grid;
   justify-items: end;
   color: rgba(26, 32, 42, 0.055);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(180px, 26vw, 360px);
+  font-size: clamp(128px, 19vw, 270px);
   font-weight: 700;
-  line-height: 0.78;
+  line-height: 0.72;
   pointer-events: none;
   user-select: none;
 }
@@ -805,7 +805,7 @@ iframe.video-frame {
   }
 
   .monogram {
-    top: 32%;
+    top: 24%;
     right: -6vw;
     opacity: 0.72;
   }
@@ -898,8 +898,8 @@ iframe.video-frame {
   .monogram {
     top: auto;
     right: -10px;
-    bottom: 130px;
-    font-size: 150px;
+    bottom: 94px;
+    font-size: 112px;
     opacity: 0.75;
   }
 
