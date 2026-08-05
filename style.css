@@ -466,6 +466,63 @@ h3 {
   padding-bottom: 96px;
 }
 
+.gate-hero {
+  display: grid;
+  align-content: center;
+  min-height: calc(100vh - 142px);
+  padding: 82px 0;
+}
+
+.gate-copy {
+  max-width: 920px;
+}
+
+.gate-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 38px;
+}
+
+.gate-card {
+  display: grid;
+  gap: 12px;
+  min-height: 260px;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.gate-card span {
+  color: var(--teal);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.gate-card strong {
+  max-width: 460px;
+  color: var(--ink);
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.18;
+}
+
+.gate-card small {
+  align-self: end;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about-card {
+  box-shadow: 18px 18px 0 var(--teal-soft);
+}
+
+.portfolio-card {
+  box-shadow: 18px 18px 0 var(--coral-soft);
+}
+
 .page-hero {
   padding: 82px 0 56px;
 }
@@ -480,9 +537,13 @@ h3 {
 
 .overview-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
   margin-top: 28px;
+}
+
+.overview-grid.compact {
+  grid-template-columns: minmax(260px, 0.5fr);
 }
 
 .overview-card {
@@ -513,6 +574,44 @@ h3 {
   color: var(--muted);
   font-size: 14px;
   line-height: 1.55;
+}
+
+.portfolio-categories {
+  display: grid;
+  gap: 32px;
+  margin-top: 30px;
+}
+
+.category-block {
+  min-width: 0;
+}
+
+.category-head,
+.category-intro {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+
+.category-head span {
+  color: var(--teal);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.category-head h3,
+.category-intro h2 {
+  margin: 0;
+}
+
+.category-intro {
+  padding: 54px 0 12px;
+  border-top: 1px solid var(--line);
+}
+
+.category-intro .eyebrow {
+  margin: 0;
+  flex: 0 0 auto;
 }
 
 .portfolio-work {
@@ -633,7 +732,9 @@ iframe.video-frame {
     grid-template-columns: 1fr;
   }
 
-  .overview-grid {
+  .overview-grid,
+  .overview-grid.compact,
+  .gate-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -693,6 +794,22 @@ iframe.video-frame {
 
   .overview-grid {
     grid-template-columns: 1fr;
+  }
+
+  .gate-grid,
+  .overview-grid.compact {
+    grid-template-columns: 1fr;
+  }
+
+  .gate-card {
+    min-height: 220px;
+    padding: 24px;
+  }
+
+  .category-intro {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2px;
   }
 
   .skill-list p,

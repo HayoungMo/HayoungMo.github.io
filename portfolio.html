@@ -17,9 +17,8 @@
         <a class="brand" href="./index.html#top">MO HAYOUNG</a>
         <div class="nav-links">
           <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
           <a href="./portfolio.html">Portfolio</a>
-          <a href="./index.html#skills">Skills</a>
-          <a href="./index.html#documents">Documents</a>
           <a href="https://github.com/HayoungMo/HayoungMo.github.io#readme" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </nav>
@@ -28,7 +27,7 @@
     <main>
       <section class="page-hero" aria-labelledby="portfolio-title">
         <p class="eyebrow">Project Library</p>
-        <h1 id="portfolio-title">프로젝트를 한눈에 보고, 필요한 자료로 바로 이동합니다.</h1>
+        <h1 id="portfolio-title">Fullstack 프로젝트와 AI 프로젝트를 나누어 정리했습니다.</h1>
         <p class="intro">
           각 프로젝트는 시연 영상, 핵심 설명, 사용 기술, GitHub README, PDF 문서를 같은 흐름으로 확인할 수 있게 정리했습니다.
           영상은 YouTube 일부 공개 업로드 후 이 영역에 바로 연결할 예정입니다.
@@ -41,33 +40,55 @@
           <h2 id="overview-title">프로젝트 모음</h2>
         </div>
 
-        <div class="overview-grid">
-          <a class="overview-card" href="#plushome">
-            <span>Team Project</span>
-            <strong>PlusHome</strong>
-            <small>가구 쇼핑과 인테리어 상담 웹 서비스</small>
-          </a>
-          <a class="overview-card" href="#machine-learning">
-            <span>Machine Learning</span>
-            <strong>학생 성적 예측</strong>
-            <small>전처리, 회귀/분류 모델 비교, 성능 평가</small>
-          </a>
-          <a class="overview-card" href="#deep-learning">
-            <span>Deep Learning</span>
-            <strong>가구 이미지 분류</strong>
-            <small>CIFAR-100 기반 CNN 이미지 분류</small>
-          </a>
-          <a class="overview-card" href="#llm-rag">
-            <span>LLM/RAG</span>
-            <strong>가구 추천 챗봇</strong>
-            <small>이미지 분류, RAG 검색, 답변 생성</small>
-          </a>
-          <a class="overview-card" href="#ai-search">
-            <span>Final Project</span>
-            <strong>AI 공고 검색</strong>
-            <small>벡터 검색과 RAG 기반 자연어 검색</small>
-          </a>
+        <div class="portfolio-categories">
+          <div class="category-block">
+            <div class="category-head">
+              <span>01</span>
+              <h3>Fullstack</h3>
+            </div>
+            <div class="overview-grid compact">
+              <a class="overview-card" href="#plushome">
+                <span>Team Project</span>
+                <strong>PlusHome</strong>
+                <small>가구 쇼핑과 인테리어 상담 웹 서비스</small>
+              </a>
+            </div>
+          </div>
+
+          <div class="category-block">
+            <div class="category-head">
+              <span>02</span>
+              <h3>AI Projects</h3>
+            </div>
+            <div class="overview-grid">
+              <a class="overview-card" href="#machine-learning">
+                <span>Machine Learning</span>
+                <strong>학생 성적 예측</strong>
+                <small>전처리, 회귀/분류 모델 비교, 성능 평가</small>
+              </a>
+              <a class="overview-card" href="#deep-learning">
+                <span>Deep Learning</span>
+                <strong>가구 이미지 분류</strong>
+                <small>CIFAR-100 기반 CNN 이미지 분류</small>
+              </a>
+              <a class="overview-card" href="#llm-rag">
+                <span>LLM/RAG</span>
+                <strong>가구 추천 챗봇</strong>
+                <small>이미지 분류, RAG 검색, 답변 생성</small>
+              </a>
+              <a class="overview-card" href="#ai-search">
+                <span>Final Project</span>
+                <strong>AI 공고 검색</strong>
+                <small>벡터 검색과 RAG 기반 자연어 검색</small>
+              </a>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <section class="category-intro" aria-labelledby="fullstack-title">
+        <p class="eyebrow">Fullstack</p>
+        <h2 id="fullstack-title">웹 서비스 구현 프로젝트</h2>
       </section>
 
       <section id="plushome" class="portfolio-work" aria-labelledby="plushome-title">
@@ -105,6 +126,11 @@
             <a href="./assets/plushome-full.pdf" target="_blank" rel="noreferrer">Full PDF</a>
           </div>
         </div>
+      </section>
+
+      <section class="category-intro" aria-labelledby="ai-title">
+        <p class="eyebrow">AI Projects</p>
+        <h2 id="ai-title">AI 학습과 서비스 확장 프로젝트</h2>
       </section>
 
       <section id="machine-learning" class="portfolio-work" aria-labelledby="ml-title">
