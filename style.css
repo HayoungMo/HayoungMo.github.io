@@ -494,9 +494,9 @@ h3 {
 }
 
 .gate-copy h1 {
-  max-width: 760px;
+  max-width: 860px;
   margin-bottom: 26px;
-  font-size: clamp(56px, 7.6vw, 94px);
+  font-size: clamp(48px, 6.2vw, 78px);
   font-weight: 500;
   line-height: 1.22;
   letter-spacing: 0;
@@ -888,7 +888,7 @@ iframe.video-frame {
   }
 
   .gate-copy h1 {
-    font-size: 48px;
+    font-size: 42px;
   }
 
   .gate-copy .intro {
