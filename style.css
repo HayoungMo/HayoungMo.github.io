@@ -474,6 +474,17 @@ h3 {
   padding-bottom: 44px;
 }
 
+.resume-hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 54px;
+  align-items: center;
+}
+
+.resume-profile-panel {
+  align-self: center;
+}
+
 .resume-summary-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1042,6 +1053,10 @@ iframe.video-frame {
 
   .profile-panel {
     justify-items: start;
+  }
+
+  .resume-hero-layout {
+    grid-template-columns: 1fr;
   }
 }
 
