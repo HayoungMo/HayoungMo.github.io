@@ -18,7 +18,7 @@
         <div class="nav-links">
           <a href="./index.html">Home</a>
           <a href="./about.html">About</a>
-          <a href="./resume.html">Resume</a>
+          <a href="#resume">Resume</a>
           <a href="./portfolio.html">Portfolio</a>
           <a href="https://github.com/HayoungMo/HayoungMo.github.io#readme" target="_blank" rel="noreferrer">GitHub</a>
         </div>
@@ -36,7 +36,7 @@
             탐구하고 있습니다.
           </p>
           <div class="hero-actions" aria-label="대표 링크">
-            <a class="button primary" href="./resume.html">이력서 보기</a>
+            <a class="button primary" href="#resume" data-open-resume>이력서 보기</a>
             <a class="button" href="./portfolio.html">프로젝트 보기</a>
             <a class="button" href="https://github.com/HayoungMo/HayoungMo.github.io#readme" target="_blank" rel="noreferrer">GitHub</a>
           </div>
@@ -94,23 +94,191 @@
         </div>
       </section>
 
-      <section class="section documents" aria-labelledby="docs-title">
-        <div class="section-head">
-          <p class="eyebrow">Documents</p>
-          <h2 id="docs-title">소개 자료</h2>
-          <p>
-            이력서와 프로젝트 자료를 분리해 두고, 상황에 따라 필요한 자료만 빠르게 전달할 수 있게 정리했습니다.
-          </p>
-        </div>
-        <div class="document-links">
-          <a href="./resume.html">이력서 보기</a>
-          <a href="./portfolio.html">포트폴리오 모음</a>
-        </div>
+      <section id="resume" class="section resume-embed" aria-labelledby="resume-title">
+        <details class="resume-details">
+          <summary id="resume-title">
+            <span>
+              <small>Resume</small>
+              <strong>이력서 펼쳐보기</strong>
+            </span>
+            <em>학력, 경력, 교육 과정, 자격증, 자기소개서</em>
+          </summary>
+
+          <div class="resume-drawer">
+            <details class="resume-subdetails" open>
+              <summary>기본 정보와 핵심 역량</summary>
+              <div class="resume-panel">
+                <div class="resume-summary-grid" aria-label="이력서 핵심 정보">
+                  <article>
+                    <span>Education</span>
+                    <strong>조선대학교 광기술공학과</strong>
+                    <small>2015.03 - 2022.02 졸업</small>
+                  </article>
+                  <article>
+                    <span>Experience</span>
+                    <strong>미군부대 델리 파트</strong>
+                    <small>2022.05 - 2023.09 / 1년 5개월</small>
+                  </article>
+                  <article>
+                    <span>Salary</span>
+                    <strong>희망연봉 3,200만원</strong>
+                    <small>신입 개발자 기준</small>
+                  </article>
+                  <article>
+                    <span>Positioning</span>
+                    <strong>AI Native Backend</strong>
+                    <small>Spring Boot + FastAPI + RAG</small>
+                  </article>
+                </div>
+
+                <p class="resume-lead">
+                  6개월 과정의 3개 팀 프로젝트에서는 모두 팀장을 맡아 기능 개발과 협업 기준을 조율했습니다. AI 심화 과정의 팀 프로젝트에서는
+                  자연어 기반 공고 검색 기능을 담당하며 지역, 예산, 업무 조건이 충분히 반영되지 않는 문제를 발견했고 검색 구조를 단계적으로 개선했습니다.
+                  Spring 기반의 안정적인 서비스 로직과 Python 기반 AI 기능을 연결해 사용자가 실제로 활용할 수 있는 결과를 만드는 개발자로 성장하고자 합니다.
+                </p>
+
+                <div class="resume-card-grid">
+                  <article>
+                    <h3>Backend Flow</h3>
+                    <p>Spring Boot 기반 REST API와 비즈니스 로직을 구현하고, MyBatis/DB 처리 흐름을 화면 기능과 연결합니다.</p>
+                  </article>
+                  <article>
+                    <h3>AI Integration</h3>
+                    <p>FastAPI 기반 AI 기능 API를 구현하고 Spring Boot 서비스 흐름 안에서 호출/응답 구조를 맞춥니다.</p>
+                  </article>
+                  <article>
+                    <h3>Search Quality</h3>
+                    <p>자연어 조건 추출, Hybrid RAG, pgvector 검색, 재정렬을 활용해 검색 품질 개선을 경험했습니다.</p>
+                  </article>
+                  <article>
+                    <h3>Collaboration</h3>
+                    <p>GitHub, Jira, Notion을 활용해 작업 범위와 완료 기준을 정리하고 팀 프로젝트 일정을 조율했습니다.</p>
+                  </article>
+                </div>
+              </div>
+            </details>
+
+            <details class="resume-subdetails">
+              <summary>학력, 경력, 교육 과정, 자격증</summary>
+              <div class="resume-panel">
+                <div class="resume-timeline">
+                  <article>
+                    <span class="resume-date">2015.03 - 2022.02</span>
+                    <div>
+                      <h3>조선대학교 광기술공학과 졸업</h3>
+                      <p>2017년 '패턴 조사 현미경을 이용한 3차원 내시경'을 주제로 학술대회 발표용 논문 작성에 참여했습니다.</p>
+                    </div>
+                  </article>
+                  <article>
+                    <span class="resume-date">2022.05 - 2023.09</span>
+                    <div>
+                      <h3>미군부대 델리 파트 / 사원</h3>
+                      <p>식품 제조, 재고 관리, 고객 응대, 전화 주문, 오픈/마감 등 매장 운영 전반을 수행했습니다. 영어 기반 업무 환경에서 외국인 고객 응대 경험을 쌓았습니다.</p>
+                    </div>
+                  </article>
+                  <article>
+                    <span class="resume-date">2026.06 - 2026.08</span>
+                    <div>
+                      <h3>휴먼AI교육센터 - 인공지능 서비스 기반 웹 개발자 심화 프로젝트</h3>
+                      <p>Python 데이터 분석, 머신러닝/딥러닝 모델 학습, FastAPI/Streamlit 기반 AI 모델 결과 화면 및 API 연동, RAG/Embedding/LLM 응답 생성 흐름을 학습했습니다.</p>
+                      <ul>
+                        <li>BidMatch: AI 기반 나라장터 입찰 공고 추천 서비스</li>
+                        <li>개인 ML: 포르투갈 학생 생활패턴 기반 성적 예측 및 학업 위험군 분류</li>
+                        <li>개인 DL: CNN 기반 가구 이미지 분류 시스템</li>
+                        <li>개인 LLM: RAG 기반 AI 가구 추천 챗봇</li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article>
+                    <span class="resume-date">2025.12 - 2026.06</span>
+                    <div>
+                      <h3>휴먼AI교육센터 - 디지털컨버전스 데이터 처리 SW 개발자 과정</h3>
+                      <p>Java, JSP, JavaScript, React 기반 웹 화면 구현과 Spring Boot 기반 REST API, OracleDB/MyBatis 기반 CRUD, GitHub/Notion 협업을 학습했습니다.</p>
+                      <ul>
+                        <li>PlusHome: 가구 쇼핑 및 인테리어 상담을 연결한 주거 통합 플랫폼</li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article>
+                    <span class="resume-date">2018.09 - 2020.06</span>
+                    <div>
+                      <h3>미국 해외연수</h3>
+                      <p>미국 라스베이거스 SSL 어학원 어학연수 및 원격 수업을 수료하며 영어 기반 환경에서 의사소통과 현지 적응 경험을 쌓았습니다.</p>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="resume-card-grid compact">
+                  <article>
+                    <h3>정보처리기사</h3>
+                    <p>2026.02 필기 합격 / 한국산업인력공단</p>
+                  </article>
+                  <article>
+                    <h3>컴퓨터활용능력 2급</h3>
+                    <p>통과</p>
+                  </article>
+                </div>
+              </div>
+            </details>
+
+            <details class="resume-subdetails">
+              <summary>자기소개서</summary>
+              <div class="resume-panel cover-letter">
+                <article class="letter-block">
+                  <h3>Java/Spring과 Python AI를 연결하는 하이브리드 개발자</h3>
+                  <p>제 가장 큰 강점은 연결입니다. 사람과 사람, 사람과 기술, 그리고 기술과 서비스를 연결하며 문제의 본질을 이해하고 해결하는 과정을 좋아합니다.</p>
+                  <p>처음 개발에 관심을 갖게 된 계기는 단순했습니다. 컴퓨터 안에서 명령어 한 줄을 입력하면 동작이 바뀌고, 작성한 코드가 화면과 기능으로 바로 나타나는 과정이 흥미로웠습니다. 게임 제작 영상에서 코드와 명령어에 따라 화면이 바뀌는 모습을 보며, 기술이 눈에 보이는 결과로 이어지는 과정에 자연스럽게 끌렸습니다.</p>
+                  <p>처음부터 개발자의 길이 명확했던 것은 아닙니다. 2020년 인공지능 교육 과정에 도전했고, 이후 머신러닝과 딥러닝을 접해보기도 했지만, 당시에는 기초가 부족해 기술의 구조를 제대로 이해하지 못했습니다. 그래서 한동안 미군 부대 근무와 소방설비 공부를 하며 제 적성을 다시 확인하는 시간을 보냈습니다.</p>
+                  <p>마지막이라는 마음으로 다시 개발 교육에 지원했고, Java와 웹 개발을 배우면서 비로소 이 길이 저에게 맞는다는 확신을 얻었습니다. 이후 AI 심화 과정을 들으며 AI를 서비스 안에서 활용하는 방법에도 관심을 갖게 되었습니다. 단순히 화면에 데이터를 보여주는 것을 넘어, 사용자의 질문을 이해하고 관련 정보를 찾아 답변하는 흐름이 서비스 안에 들어갈 수 있다는 점이 매력적으로 느껴졌습니다.</p>
+                  <p>짧은 기간 동안 AI를 깊게 이해했다고 말하기는 어렵습니다. 하지만 직접 AI 검색 기능을 구현하며 모델 성능뿐 아니라 데이터 구조, 검색 방식, API 연동, 응답 품질까지 함께 고려해야 실제 서비스가 된다는 것을 배웠습니다. 이 경험을 통해 AI를 단순 기능이 아니라 서비스의 문제 해결력을 확장하는 도구로 바라보게 되었습니다.</p>
+                  <p>이 경험을 바탕으로 저는 특정 분야에만 한정된 개발자가 아니라, 웹 서비스와 AI 기술을 연결하고 필요하다면 반도체, 전자, 제조 등 다양한 산업의 문제를 소프트웨어로 해결하는 개발자로 성장하고자 합니다.</p>
+                </article>
+
+                <article class="letter-block">
+                  <h3>프로젝트 문제 해결 경험</h3>
+                  <p><strong>PlusHome 가구 쇼핑 및 인테리어 상담 플랫폼 개발</strong><br />PlusHome 프로젝트는 React, Spring Boot, MyBatis, OracleDB 기반으로 제작되었습니다. 사용자는 가구를 구매하고 인테리어 업체와 상담을 진행할 수 있으며 사업자는 상품과 상담을 관리할 수 있도록 개발했습니다. 저는 메인 화면, 통합 검색, 상품 문의, 추천/숨김, 대본 기반 챗봇 기능을 담당했습니다.</p>
+                  <p>초기에는 검색어, 필터, 페이지 정보를 화면 상태로만 관리했기 때문에 새로고침이나 뒤로가기를 하면 사용자가 설정한 조건이 초기화되는 문제가 있었습니다. 이를 해결하기 위해 검색어, 필터, 페이지 정보를 URL QueryString으로 관리하는 구조로 변경해 새로고침과 URL 공유, 뒤로가기 이후에도 동일한 검색 결과를 유지할 수 있도록 개선했습니다.</p>
+                  <p>추천 상품 숨김 기능도 화면에서만 상태를 관리했기 때문에 새로고침하거나 다시 로그인하면 숨김 정보가 초기화되었습니다. 사용자 ID를 기준으로 숨김 상품 정보를 데이터베이스에 저장하고, 로그인 시 사용자별 숨김 목록을 다시 조회하는 구조로 변경해 추천/숨김 상태가 지속적으로 유지되도록 개선했습니다.</p>
+                  <p><strong>RAG 기반 AI 가구 추천 챗봇</strong><br />PlusHome에서 AI 추천 기능을 구현하지 못한 아쉬움이 남아 개인 프로젝트로 CNN 기반 이미지 분류와 RAG를 결합한 가구 추천 챗봇을 구현했습니다. Streamlit을 활용해 이미지 업로드부터 추천 결과까지 확인할 수 있는 프로토타입도 함께 제작했습니다.</p>
+                  <p>MobileNetV2 기반 전이학습 모델을 적용하는 과정에서 TensorFlow/Keras 버전 차이로 모델이 정상적으로 로드되지 않는 문제가 발생했고, 호환 가능한 모델을 별도로 생성해 Streamlit 환경에서 사용할 수 있도록 개선했습니다. 또한 로컬 Ollama 운영의 메모리 제약과 API 연결 문제를 확인한 뒤 Gemini API 기반으로 구조를 변경해 이미지 분류, RAG 검색, AI 답변 생성까지 전체 파이프라인을 완성했습니다.</p>
+                  <p><strong>BidMatch AI 기반 나라장터 입찰 공고 추천 서비스 개발</strong><br />BidMatch 프로젝트는 React, Spring Boot, FastAPI, PostgreSQL(pgvector), Redis 기반으로 구축한 AI 기반 나라장터 입찰 공고 추천 서비스입니다. 자연어 기반 공고 검색 및 탐색, AI 추천/요약, 입찰 자격 자가진단, OCR, RAG 챗봇 기능을 제공하며 Docker와 Jenkins 기반 CI/CD 환경에서 개발했습니다.</p>
+                  <p>가장 많은 고민이 필요했던 부분은 자연어 기반 AI 검색 품질 개선이었습니다. 검색어에서 지역, 키워드, 예산 조건을 추출해 검색 조건으로 구조화하고, 자모 분해와 유사도 비교를 활용한 지역명 오타 보정을 적용했습니다. 이후 BGE-M3 임베딩으로 의미적으로 유사한 후보 공고를 검색한 뒤 Hybrid 검색을 통한 재정렬을 적용해 검색 조건과 의미 유사도를 함께 반영하도록 개선했습니다.</p>
+                  <p>추천 이유, 조건 일치 여부, 추가 확인이 필요한 요소를 함께 제공해 사용자가 검색 결과를 쉽게 판단할 수 있도록 했으며, AI 응답 실패 시에는 일반 검색으로 전환되는 fallback 로직을 구현해 서비스의 안정성을 높였습니다.</p>
+                </article>
+
+                <article class="letter-block">
+                  <h3>협업과 성장</h3>
+                  <p>6개월 과정에서 세 차례 팀장 역할을 맡았고, 심화 과정에서는 팀원으로 프로젝트를 수행했습니다. 두 역할을 모두 경험하며 협업은 단순히 업무를 나누는 것이 아니라, 팀이 같은 목표와 기준으로 움직일 수 있도록 만드는 과정이라는 것을 배웠습니다.</p>
+                  <p>이후 진행되는 프로젝트들에서는 Notion 및 소통을 적극 활용해 담당 기능, 완료 기준, 남은 이슈를 매일 공유하고, 팀원별 진행 상황을 지속적으로 확인했습니다. 기능 구현 전에는 화면 흐름과 역할 범위를 함께 정리했고, 의견 차이가 생기면 프로젝트 목표와 일정 기준에서 해결 방향을 함께 결정했습니다.</p>
+                  <p>앞으로도 Java/Spring 기반 서비스 개발 경험과 Python/FastAPI 기반 AI 개발 경험을 바탕으로, 비즈니스 로직부터 데이터 처리, AI 연동까지 전체 흐름을 이해하며 다양한 기술을 문제에 맞게 연결하고 실제 가치로 구현하는 개발자로 성장하고자 합니다.</p>
+                </article>
+              </div>
+            </details>
+          </div>
+        </details>
       </section>
     </main>
 
     <footer class="footer">
       <p>© 2026 Mo Hayoung. Built for GitHub Pages.</p>
     </footer>
+    <script>
+      const resumeDetails = document.querySelector(".resume-details");
+      const openResume = () => {
+        if (!resumeDetails) return;
+        resumeDetails.open = true;
+        resumeDetails.scrollIntoView({ behavior: "smooth", block: "start" });
+      };
+
+      document.querySelectorAll('a[href="#resume"], a[data-open-resume]').forEach((link) => {
+        link.addEventListener("click", () => {
+          window.setTimeout(openResume, 0);
+        });
+      });
+
+      if (window.location.hash === "#resume") {
+        window.setTimeout(openResume, 120);
+      }
+    </script>
   </body>
 </html>

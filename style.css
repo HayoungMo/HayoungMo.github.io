@@ -462,27 +462,81 @@ h3 {
   color: var(--muted);
 }
 
-.documents {
+.resume-embed {
   padding-bottom: 96px;
 }
 
-.resume-page {
-  padding-bottom: 84px;
+.resume-details {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+  overflow: hidden;
 }
 
-.resume-hero {
-  padding-bottom: 44px;
+.resume-details > summary,
+.resume-subdetails > summary {
+  cursor: pointer;
+  list-style: none;
 }
 
-.resume-hero-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 320px;
-  gap: 54px;
+.resume-details > summary::-webkit-details-marker,
+.resume-subdetails > summary::-webkit-details-marker {
+  display: none;
+}
+
+.resume-details > summary {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 26px;
 }
 
-.resume-profile-panel {
-  align-self: center;
+.resume-details > summary span {
+  display: grid;
+  gap: 4px;
+}
+
+.resume-details > summary small {
+  color: var(--teal);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.resume-details > summary strong {
+  color: var(--ink);
+  font-size: clamp(26px, 4vw, 38px);
+  line-height: 1.2;
+}
+
+.resume-details > summary em {
+  color: var(--muted);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.resume-drawer {
+  display: grid;
+  gap: 12px;
+  padding: 0 26px 26px;
+}
+
+.resume-subdetails {
+  border-top: 1px solid var(--line);
+}
+
+.resume-subdetails > summary {
+  padding: 18px 0;
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.resume-panel {
+  display: grid;
+  gap: 22px;
+  padding-bottom: 24px;
 }
 
 .resume-summary-grid {
@@ -1053,10 +1107,6 @@ iframe.video-frame {
 
   .profile-panel {
     justify-items: start;
-  }
-
-  .resume-hero-layout {
-    grid-template-columns: 1fr;
   }
 }
 

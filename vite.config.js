@@ -10,7 +10,6 @@ export default defineConfig({
       input: {
         main: "index.html",
         about: "about.html",
-        resume: "resume.html",
         portfolio: "portfolio.html",
       },
     },

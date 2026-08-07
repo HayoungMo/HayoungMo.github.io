@@ -1,11 +1,11 @@
 # Mo Hayoung Portfolio
 
 GitHub Pages로 배포하는 개인 포트폴리오 사이트입니다.  
-대문에서 `About`, `Resume`, `Portfolio`로 이동하고, 포트폴리오 페이지에서는 AI 프로젝트를 중심으로 Fullstack 프로젝트까지 구분해 보여줍니다.
+대문에서 `About`, `Resume`, `Portfolio`로 이동하고, About 페이지 안에서 접히는 이력서를 확인할 수 있습니다.
 
 - Site: https://hayoungmo.github.io/
 - About: https://hayoungmo.github.io/about.html
-- Resume: https://hayoungmo.github.io/resume.html
+- Resume: https://hayoungmo.github.io/about.html#resume
 - Portfolio: https://hayoungmo.github.io/portfolio.html
 - GitHub: https://github.com/HayoungMo
 
@@ -14,8 +14,7 @@ GitHub Pages로 배포하는 개인 포트폴리오 사이트입니다.
 | Page | Role |
 | --- | --- |
 | `index.html` | 대문 페이지. 큰 타이포와 `M H Y` 워터마크로 첫인상을 만들고 Resume/Portfolio로 이동합니다. |
-| `about.html` | 자기소개, 개발 방식, 기술 스택을 정리합니다. |
-| `resume.html` | 사람인 이력서 기준의 학력, 경력, 희망연봉, 핵심 역량, 교육, 자격증, 자기소개서를 화면으로 정리합니다. |
+| `about.html` | 자기소개, 개발 방식, 기술 스택, 접이식 이력서를 정리합니다. |
 | `portfolio.html` | AI/Fullstack 프로젝트, 영상 영역, GitHub README, PDF 링크를 정리합니다. |
 
 ## Project Groups
