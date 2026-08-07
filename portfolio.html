@@ -30,7 +30,7 @@
         <h1 id="portfolio-title">Fullstack 프로젝트와 AI 프로젝트를 나누어 정리했습니다.</h1>
         <p class="intro">
           각 프로젝트는 시연 영상, 핵심 설명, 사용 기술, GitHub README, PDF 문서를 같은 흐름으로 확인할 수 있게 정리했습니다.
-          영상은 YouTube 일부 공개 업로드 후 이 영역에 바로 연결할 예정입니다.
+          개인 AI 프로젝트는 페이지 안에서 바로 시연 영상을 재생할 수 있습니다.
         </p>
       </section>
 
@@ -61,25 +61,25 @@
               <h3>AI Projects</h3>
             </div>
             <div class="overview-grid">
-              <a class="overview-card" href="#machine-learning">
-                <span>Machine Learning</span>
-                <strong>학생 성적 예측</strong>
-                <small>전처리, 회귀/분류 모델 비교, 성능 평가</small>
+              <a class="overview-card" href="#ai-search">
+                <span>Final Project</span>
+                <strong>AI 공고 검색</strong>
+                <small>벡터 검색과 RAG 기반 자연어 검색</small>
               </a>
               <a class="overview-card" href="#deep-learning">
                 <span>Deep Learning</span>
                 <strong>가구 이미지 분류</strong>
                 <small>CIFAR-100 기반 CNN 이미지 분류</small>
               </a>
+              <a class="overview-card" href="#machine-learning">
+                <span>Machine Learning</span>
+                <strong>학생 성적 예측</strong>
+                <small>전처리, 회귀/분류 모델 비교, 성능 평가</small>
+              </a>
               <a class="overview-card" href="#llm-rag">
                 <span>LLM/RAG</span>
                 <strong>가구 추천 챗봇</strong>
                 <small>이미지 분류, RAG 검색, 답변 생성</small>
-              </a>
-              <a class="overview-card" href="#ai-search">
-                <span>Final Project</span>
-                <strong>AI 공고 검색</strong>
-                <small>벡터 검색과 RAG 기반 자연어 검색</small>
               </a>
             </div>
           </div>
@@ -133,111 +133,6 @@
         <h2 id="ai-title">AI 학습과 서비스 확장 프로젝트</h2>
       </section>
 
-      <section id="machine-learning" class="portfolio-work" aria-labelledby="ml-title">
-        <div class="video-shell">
-          <div class="video-frame pending">
-            <strong>ML Demo</strong>
-            <span>YouTube 영상 준비 중</span>
-          </div>
-        </div>
-
-        <div class="detail-copy">
-          <div class="project-meta">
-            <span>Machine Learning</span>
-            <span>Python</span>
-          </div>
-          <h2 id="ml-title">학생 성적 예측 및 위험군 분류</h2>
-          <p>
-            UCI Student Performance Dataset을 사용해 학습 데이터 전처리, 회귀/분류 모델 비교, 성능 평가를 수행했습니다.
-            모델 결과뿐 아니라 입력 변수가 예측에 어떤 영향을 주는지 확인하는 흐름으로 정리했습니다.
-          </p>
-          <dl class="detail-list">
-            <div>
-              <dt>핵심 흐름</dt>
-              <dd>데이터 전처리, 학습/테스트 분리, 모델 비교, 성능 지표 확인, 위험군 분류</dd>
-            </div>
-            <div>
-              <dt>사용 기술</dt>
-              <dd>Python, Pandas, Scikit-learn, Matplotlib, Streamlit</dd>
-            </div>
-          </dl>
-          <div class="detail-actions">
-            <a href="https://github.com/HayoungMo/ml_mohayoung_project#readme" target="_blank" rel="noreferrer">GitHub README</a>
-            <a href="./assets/ML%20PRJ_MHY.pdf" target="_blank" rel="noreferrer">Summary PDF</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="deep-learning" class="portfolio-work" aria-labelledby="dl-title">
-        <div class="video-shell">
-          <div class="video-frame pending">
-            <strong>DL Demo</strong>
-            <span>YouTube 영상 준비 중</span>
-          </div>
-        </div>
-
-        <div class="detail-copy">
-          <div class="project-meta">
-            <span>Deep Learning</span>
-            <span>CNN</span>
-          </div>
-          <h2 id="dl-title">CNN 기반 가구 이미지 카테고리 분류</h2>
-          <p>
-            CIFAR-100에서 가구 관련 클래스를 추출해 CNN 모델을 학습하고, 업로드 이미지의 가구 카테고리를 예측하는
-            딥러닝 분류 프로젝트입니다. 전처리, 모델 학습, 예측 결과 시각화, Streamlit 시연 흐름을 정리했습니다.
-          </p>
-          <dl class="detail-list">
-            <div>
-              <dt>핵심 흐름</dt>
-              <dd>CIFAR-100 필터링, 라벨 재매핑, CNN 학습, accuracy/loss 확인, Streamlit 예측</dd>
-            </div>
-            <div>
-              <dt>사용 기술</dt>
-              <dd>Python, TensorFlow/Keras, CNN, NumPy, Matplotlib, Streamlit</dd>
-            </div>
-          </dl>
-          <div class="detail-actions">
-            <a href="./assets/DL%20PRJ_MHY.pdf" target="_blank" rel="noreferrer">Summary PDF</a>
-            <span aria-disabled="true">GitHub 준비 중</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="llm-rag" class="portfolio-work" aria-labelledby="llm-title">
-        <div class="video-shell">
-          <div class="video-frame pending">
-            <strong>LLM/RAG Demo</strong>
-            <span>YouTube 영상 준비 중</span>
-          </div>
-        </div>
-
-        <div class="detail-copy">
-          <div class="project-meta">
-            <span>LLM</span>
-            <span>RAG</span>
-          </div>
-          <h2 id="llm-title">이미지 분류와 RAG 기반 가구 추천 챗봇</h2>
-          <p>
-            업로드한 가구 이미지를 분류하고, 예측 카테고리와 사용자 질문을 함께 사용해 관련 문서를 검색한 뒤
-            추천 답변을 생성하는 LLM/RAG 프로토타입입니다.
-          </p>
-          <dl class="detail-list">
-            <div>
-              <dt>핵심 흐름</dt>
-              <dd>이미지 업로드, MobileNetV2 분류, RAG 문서 검색, LLM 답변 생성, fallback 답변</dd>
-            </div>
-            <div>
-              <dt>사용 기술</dt>
-              <dd>Python, Streamlit, TensorFlow/Keras, TF-IDF, cosine similarity, Gemini/Groq/Ollama</dd>
-            </div>
-          </dl>
-          <div class="detail-actions">
-            <a href="https://github.com/HayoungMo/llm_mohayoung_project#readme" target="_blank" rel="noreferrer">GitHub README</a>
-            <a href="./assets/LLM%20PRJ_MHY.pdf" target="_blank" rel="noreferrer">Summary PDF</a>
-          </div>
-        </div>
-      </section>
-
       <section id="ai-search" class="portfolio-work" aria-labelledby="search-title">
         <div class="video-shell">
           <div class="video-frame pending">
@@ -269,6 +164,120 @@
           <div class="detail-actions">
             <span aria-disabled="true">GitHub 준비 중</span>
             <span aria-disabled="true">PDF 준비 중</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="deep-learning" class="portfolio-work" aria-labelledby="dl-title">
+        <div class="video-shell">
+          <iframe
+            class="video-frame"
+            src="https://www.youtube.com/embed/5h_Blc88tj8"
+            title="Deep Learning project demo video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="detail-copy">
+          <div class="project-meta">
+            <span>Deep Learning</span>
+            <span>CNN</span>
+          </div>
+          <h2 id="dl-title">CNN 기반 가구 이미지 카테고리 분류</h2>
+          <p>
+            CIFAR-100에서 가구 관련 클래스를 추출해 CNN 모델을 학습하고, 업로드 이미지의 가구 카테고리를 예측하는
+            딥러닝 분류 프로젝트입니다. 전처리, 모델 학습, 예측 결과 시각화, Streamlit 시연 흐름을 정리했습니다.
+          </p>
+          <dl class="detail-list">
+            <div>
+              <dt>핵심 흐름</dt>
+              <dd>CIFAR-100 필터링, 라벨 재매핑, CNN 학습, accuracy/loss 확인, Streamlit 예측</dd>
+            </div>
+            <div>
+              <dt>사용 기술</dt>
+              <dd>Python, TensorFlow/Keras, CNN, NumPy, Matplotlib, Streamlit</dd>
+            </div>
+          </dl>
+          <div class="detail-actions">
+            <a href="https://github.com/HayoungMo/dl_mohayoung_furniture_project#readme" target="_blank" rel="noreferrer">GitHub README</a>
+            <a href="./assets/DL%20PRJ_MHY.pdf" target="_blank" rel="noreferrer">Summary PDF</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="machine-learning" class="portfolio-work" aria-labelledby="ml-title">
+        <div class="video-shell">
+          <iframe
+            class="video-frame"
+            src="https://www.youtube.com/embed/_Bp-JHLNQRM"
+            title="Machine Learning project demo video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="detail-copy">
+          <div class="project-meta">
+            <span>Machine Learning</span>
+            <span>Python</span>
+          </div>
+          <h2 id="ml-title">학생 성적 예측 및 위험군 분류</h2>
+          <p>
+            UCI Student Performance Dataset을 사용해 학습 데이터 전처리, 회귀/분류 모델 비교, 성능 평가를 수행했습니다.
+            모델 결과뿐 아니라 입력 변수가 예측에 어떤 영향을 주는지 확인하는 흐름으로 정리했습니다.
+          </p>
+          <dl class="detail-list">
+            <div>
+              <dt>핵심 흐름</dt>
+              <dd>데이터 전처리, 학습/테스트 분리, 모델 비교, 성능 지표 확인, 위험군 분류</dd>
+            </div>
+            <div>
+              <dt>사용 기술</dt>
+              <dd>Python, Pandas, Scikit-learn, Matplotlib, Streamlit</dd>
+            </div>
+          </dl>
+          <div class="detail-actions">
+            <a href="https://github.com/HayoungMo/ml_mohayoung_project#readme" target="_blank" rel="noreferrer">GitHub README</a>
+            <a href="./assets/ML%20PRJ_MHY.pdf" target="_blank" rel="noreferrer">Summary PDF</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="llm-rag" class="portfolio-work" aria-labelledby="llm-title">
+        <div class="video-shell">
+          <iframe
+            class="video-frame"
+            src="https://www.youtube.com/embed/5DC6A5fxXO4"
+            title="LLM RAG project demo video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="detail-copy">
+          <div class="project-meta">
+            <span>LLM</span>
+            <span>RAG</span>
+          </div>
+          <h2 id="llm-title">이미지 분류와 RAG 기반 가구 추천 챗봇</h2>
+          <p>
+            업로드한 가구 이미지를 분류하고, 예측 카테고리와 사용자 질문을 함께 사용해 관련 문서를 검색한 뒤
+            추천 답변을 생성하는 LLM/RAG 프로토타입입니다.
+          </p>
+          <dl class="detail-list">
+            <div>
+              <dt>핵심 흐름</dt>
+              <dd>이미지 업로드, MobileNetV2 분류, RAG 문서 검색, LLM 답변 생성, fallback 답변</dd>
+            </div>
+            <div>
+              <dt>사용 기술</dt>
+              <dd>Python, Streamlit, TensorFlow/Keras, TF-IDF, cosine similarity, Gemini/Groq/Ollama</dd>
+            </div>
+          </dl>
+          <div class="detail-actions">
+            <a href="https://github.com/HayoungMo/llm_mohayoung_project#readme" target="_blank" rel="noreferrer">GitHub README</a>
+            <a href="./assets/LLM%20PRJ_MHY.pdf" target="_blank" rel="noreferrer">Summary PDF</a>
           </div>
         </div>
       </section>
