@@ -682,6 +682,9 @@ h3 {
 
 .video-shell {
   min-width: 0;
+  display: grid;
+  align-content: start;
+  gap: 12px;
 }
 
 .video-frame {
@@ -719,6 +722,31 @@ h3 {
 iframe.video-frame {
   display: block;
   border: 0;
+}
+
+.media-strip {
+  display: grid;
+  gap: 10px;
+}
+
+.media-strip.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.media-shot {
+  display: block;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  overflow: hidden;
+}
+
+.media-shot img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
 }
 
 .detail-copy {
