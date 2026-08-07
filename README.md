@@ -29,7 +29,7 @@ GitHub Pages로 배포하는 개인 포트폴리오 사이트입니다.
 - LLM/RAG: 이미지 분류와 RAG 기반 가구 추천 챗봇
 - Final Project: AI 기반 공고 검색 서비스
 
-## Assets
+<!-- ## Assets
 
 `assets/` 폴더에는 이력서, 프로젝트 PDF, 프로필 이미지를 둡니다.
 
@@ -70,4 +70,4 @@ git commit -m "Update portfolio"
 git push origin main
 ```
 
-`main` 브랜치에 push하면 GitHub Actions가 `index.html`, `about.html`, `portfolio.html`, `style.css`, `assets` 폴더를 GitHub Pages로 배포합니다.
+`main` 브랜치에 push하면 GitHub Actions가 `index.html`, `about.html`, `portfolio.html`, `style.css`, `assets` 폴더를 GitHub Pages로 배포합니다.-->
