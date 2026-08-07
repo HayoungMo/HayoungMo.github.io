@@ -7,7 +7,7 @@
     <title>Portfolio | 모하영</title>
     <meta
       name="description"
-      content="모하영의 PlusHome, 머신러닝, 딥러닝, LLM/RAG 프로젝트를 영상, GitHub, PDF 자료로 모아둔 포트폴리오 페이지입니다."
+      content="모하영의 BidMatch, 머신러닝, 딥러닝, LLM/RAG, PlusHome 프로젝트를 영상, GitHub, PDF 자료로 모아둔 포트폴리오 페이지입니다."
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -27,10 +27,10 @@
     <main>
       <section class="page-hero" aria-labelledby="portfolio-title">
         <p class="eyebrow">Project Library</p>
-        <h1 id="portfolio-title">Fullstack 프로젝트와 AI 프로젝트를 나누어 정리했습니다.</h1>
+        <h1 id="portfolio-title">AI 서비스 프로젝트를 중심으로 정리했습니다.</h1>
         <p class="intro">
-          각 프로젝트는 시연 영상, 핵심 설명, 사용 기술, GitHub README, PDF 문서를 같은 흐름으로 확인할 수 있게 정리했습니다.
-          개인 AI 프로젝트는 페이지 안에서 바로 시연 영상을 재생할 수 있습니다.
+          심화과정 Final Project인 BidMatch를 먼저 보여주고, 개인 AI 프로젝트와 Fullstack 팀 프로젝트를
+          시연 영상, 핵심 설명, 사용 기술, GitHub README, PDF 문서 흐름으로 정리했습니다.
         </p>
       </section>
 
@@ -44,27 +44,13 @@
           <div class="category-block">
             <div class="category-head">
               <span>01</span>
-              <h3>Fullstack</h3>
-            </div>
-            <div class="overview-grid compact">
-              <a class="overview-card" href="#plushome">
-                <span>Team Project</span>
-                <strong>PlusHome</strong>
-                <small>가구 쇼핑과 인테리어 상담 웹 서비스</small>
-              </a>
-            </div>
-          </div>
-
-          <div class="category-block">
-            <div class="category-head">
-              <span>02</span>
               <h3>AI Projects</h3>
             </div>
-            <div class="overview-grid">
-              <a class="overview-card" href="#ai-search">
-                <span>Final Project</span>
-                <strong>AI 공고 검색</strong>
-                <small>벡터 검색과 RAG 기반 자연어 검색</small>
+            <div class="overview-grid ai-overview">
+              <a class="overview-card featured" href="#bidmatch">
+                <span>Final Team Project</span>
+                <strong>BidMatch</strong>
+                <small>나라장터 입찰 공고 추천, AI 요약, 자격 자가진단, RAG 챗봇</small>
               </a>
               <a class="overview-card" href="#deep-learning">
                 <span>Deep Learning</span>
@@ -83,85 +69,60 @@
               </a>
             </div>
           </div>
-        </div>
-      </section>
 
-      <section class="category-intro" aria-labelledby="fullstack-title">
-        <p class="eyebrow">Fullstack</p>
-        <h2 id="fullstack-title">웹 서비스 구현 프로젝트</h2>
-      </section>
-
-      <section id="plushome" class="portfolio-work" aria-labelledby="plushome-title">
-        <div class="video-shell">
-          <iframe
-            class="video-frame"
-            src="https://www.youtube.com/embed/0Aa0VpRnhKA"
-            title="PlusHome project demo video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div>
-
-        <div class="detail-copy">
-          <div class="project-meta">
-            <span>Team Project</span>
-            <span>Team Leader</span>
-            <span>2026.04 - 2026.06</span>
-          </div>
-          <h2 id="plushome-title">PlusHome</h2>
-          <p>
-            가구 쇼핑과 인테리어 상담을 하나의 흐름으로 제공하는 웹 서비스입니다. 검색, 조건 필터, 상품 문의,
-            추천 및 즐겨찾기 기능을 담당했고 팀장으로 기능 통합과 작업 기준을 조율했습니다.
-          </p>
-          <dl class="detail-list">
-            <div>
-              <dt>담당 기능</dt>
-              <dd>통합 검색, 조건 필터, 상품 문의, 이미지 첨부, 추천/숨김, 즐겨찾기</dd>
+          <div class="category-block">
+            <div class="category-head">
+              <span>02</span>
+              <h3>Fullstack</h3>
             </div>
-            <div>
-              <dt>사용 기술</dt>
-              <dd>React, JavaScript, Spring Boot, MyBatis, Oracle DB, REST API</dd>
+            <div class="overview-grid compact">
+              <a class="overview-card" href="#plushome">
+                <span>Team Project</span>
+                <strong>PlusHome</strong>
+                <small>가구 쇼핑과 인테리어 상담을 연결한 주거 통합 플랫폼</small>
+              </a>
             </div>
-          </dl>
-          <div class="detail-actions">
-            <a href="https://github.com/HayoungMo/PlusHome#readme" target="_blank" rel="noreferrer">GitHub README</a>
-            <a href="./assets/plushome-mini.pdf" target="_blank" rel="noreferrer">Summary PDF</a>
-            <a href="./assets/plushome-full.pdf" target="_blank" rel="noreferrer">Full PDF</a>
           </div>
         </div>
       </section>
 
       <section class="category-intro" aria-labelledby="ai-title">
         <p class="eyebrow">AI Projects</p>
-        <h2 id="ai-title">AI 학습과 서비스 확장 프로젝트</h2>
+        <h2 id="ai-title">심화과정 Final Project와 개인 AI 프로젝트</h2>
       </section>
 
-      <section id="ai-search" class="portfolio-work" aria-labelledby="search-title">
+      <section id="bidmatch" class="portfolio-work featured-work" aria-labelledby="bidmatch-title">
         <div class="video-shell">
           <div class="video-frame pending">
-            <strong>Final Project Demo</strong>
-            <span>진행 중</span>
+            <strong>BidMatch Demo</strong>
+            <span>시연 자료 준비 중</span>
           </div>
         </div>
 
         <div class="detail-copy">
           <div class="project-meta">
-            <span>AI Search</span>
+            <span>Final Project</span>
             <span>Team Project</span>
+            <span>AI Native Backend</span>
           </div>
-          <h2 id="search-title">AI 기반 공고 검색 서비스</h2>
+          <h2 id="bidmatch-title">BidMatch - AI 기반 나라장터 입찰 공고 추천 서비스</h2>
           <p>
-            벡터 검색과 RAG 구조를 활용해 자연어 검색 기능을 구현하는 팀 프로젝트입니다. 검색 결과와 추천 근거를 함께
-            보여주고, 지역명 오타 보정과 조건 검색 개선을 실험하고 있습니다.
+            나라장터 공고 수집부터 맞춤 추천, AI 요약, 자격 자가진단까지 연결한 AI 웹 서비스입니다.
+            Spring Boot 기반 비즈니스 로직과 FastAPI 기반 AI 기능을 연동하고, 검색 품질을 높이기 위한
+            RAG/pgvector 구조를 적용했습니다.
           </p>
           <dl class="detail-list">
             <div>
-              <dt>핵심 흐름</dt>
-              <dd>자연어 검색, 조건 추출, 벡터 검색, RAG 답변, 검색 결과 근거 표시</dd>
+              <dt>핵심 기능</dt>
+              <dd>나라장터 공고 수집, 맞춤 추천, AI 요약, 자격 자가진단, OCR, 자연어 검색, RAG 챗봇</dd>
             </div>
             <div>
               <dt>사용 기술</dt>
-              <dd>Spring Boot, Python, RAG, Vector Search, LLM, Database</dd>
+              <dd>React, Spring Boot, FastAPI, PostgreSQL, Redis, pgvector, Docker, Jenkins</dd>
+            </div>
+            <div>
+              <dt>구현 포인트</dt>
+              <dd>공고 데이터 관리와 검색 구조, Spring Boot-FastAPI 연동, AI 기능 통합, CI/CD 자동 배포 환경 구축</dd>
             </div>
           </dl>
           <div class="detail-actions">
@@ -302,6 +263,55 @@
             <a href="https://github.com/HayoungMo/llm_mohayoung_project#readme" target="_blank" rel="noreferrer">GitHub README</a>
             <a href="./assets/LLM%20PRJ_MHY.pdf" target="_blank" rel="noreferrer">Summary PDF</a>
             <a href="./assets/llm-full.pdf" target="_blank" rel="noreferrer">Full PDF</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="category-intro" aria-labelledby="fullstack-title">
+        <p class="eyebrow">Fullstack</p>
+        <h2 id="fullstack-title">디지털컨버전스 팀 프로젝트</h2>
+      </section>
+
+      <section id="plushome" class="portfolio-work" aria-labelledby="plushome-title">
+        <div class="video-shell">
+          <iframe
+            class="video-frame"
+            src="https://www.youtube.com/embed/0Aa0VpRnhKA"
+            title="PlusHome project demo video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="detail-copy">
+          <div class="project-meta">
+            <span>Team Project</span>
+            <span>Team Leader</span>
+            <span>2026.04 - 2026.06</span>
+          </div>
+          <h2 id="plushome-title">PlusHome</h2>
+          <p>
+            가구 쇼핑 및 인테리어 상담을 연결한 주거 통합 플랫폼입니다. React와 Spring Boot 기반 웹 서비스를 구현하고,
+            팀장으로 공통 개발 규칙과 협업 프로세스를 정리하며 기능 통합을 조율했습니다.
+          </p>
+          <dl class="detail-list">
+            <div>
+              <dt>핵심 기능</dt>
+              <dd>JWT 인증/권한 관리, 역할별 접근 제어, 주문/배송/상담 상태 흐름, 사업자/관리자 대시보드</dd>
+            </div>
+            <div>
+              <dt>담당 역할</dt>
+              <dd>통합 검색, 조건 필터, 상품 문의, 이미지 첨부, 추천/숨김, 즐겨찾기, 팀 개발 기준 수립</dd>
+            </div>
+            <div>
+              <dt>사용 기술</dt>
+              <dd>React, Spring Boot, MyBatis, Oracle DB, JWT, REST API</dd>
+            </div>
+          </dl>
+          <div class="detail-actions">
+            <a href="https://github.com/HayoungMo/PlusHome#readme" target="_blank" rel="noreferrer">GitHub README</a>
+            <a href="./assets/plushome-mini.pdf" target="_blank" rel="noreferrer">Summary PDF</a>
+            <a href="./assets/plushome-full.pdf" target="_blank" rel="noreferrer">Full PDF</a>
           </div>
         </div>
       </section>
