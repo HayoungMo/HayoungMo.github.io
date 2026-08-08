@@ -595,6 +595,30 @@ h3 {
   color: var(--muted);
 }
 
+.letter-block strong {
+  color: var(--ink);
+}
+
+.letter-block ul,
+.letter-block ol {
+  margin: 12px 0 0;
+  padding-left: 22px;
+  color: var(--muted);
+}
+
+.letter-block li + li {
+  margin-top: 12px;
+}
+
+.letter-block li p {
+  margin-top: 6px;
+}
+
+.letter-block ul + p,
+.letter-block ol + p {
+  margin-top: 14px;
+}
+
 .resume-timeline {
   display: grid;
   gap: 18px;
