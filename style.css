@@ -972,6 +972,12 @@ iframe.video-frame {
   border: 0;
 }
 
+.demo-video {
+  display: block;
+  object-fit: contain;
+  pointer-events: none;
+}
+
 .demo-focus {
   display: grid;
   gap: 10px;
