@@ -93,7 +93,7 @@
 
       <section id="bidmatch" class="portfolio-work featured-work" aria-labelledby="bidmatch-title">
         <div class="video-shell">
-          <video class="video-frame demo-video" autoplay muted loop playsinline preload="metadata" aria-label="BidMatch project demo preview">
+          <video class="video-frame demo-video" autoplay muted loop playsinline preload="metadata" data-speed="1.2" aria-label="BidMatch project demo preview">
             <source src="./assets/bidmatch-demo-preview.mp4" type="video/mp4" />
           </video>
           <div class="demo-focus" aria-label="BidMatch 시연 주요 기능">
@@ -315,13 +315,9 @@
 
       <section id="plushome" class="portfolio-work" aria-labelledby="plushome-title">
         <div class="video-shell">
-          <iframe
-            class="video-frame"
-            src="https://www.youtube.com/embed/0Aa0VpRnhKA?autoplay=1&mute=1&loop=1&playlist=0Aa0VpRnhKA&controls=0&rel=0&modestbranding=1&playsinline=1"
-            title="PlusHome project demo video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+          <video class="video-frame demo-video" autoplay muted loop playsinline preload="metadata" aria-label="PlusHome project demo preview">
+            <source src="./assets/plushome-demo-preview.mp4" type="video/mp4" />
+          </video>
           <div class="demo-focus" aria-label="PlusHome 시연 주요 기능">
             <strong>Demo Focus</strong>
             <div>
@@ -373,5 +369,18 @@
     <footer class="footer">
       <p>© 2026 Mo Hayoung. Built for GitHub Pages.</p>
     </footer>
+    <script>
+      document.querySelectorAll(".demo-video[data-speed]").forEach((video) => {
+        const speed = Number(video.dataset.speed);
+        if (!Number.isFinite(speed)) return;
+
+        const applySpeed = () => {
+          video.playbackRate = speed;
+        };
+
+        video.addEventListener("loadedmetadata", applySpeed);
+        applySpeed();
+      });
+    </script>
   </body>
 </html>
