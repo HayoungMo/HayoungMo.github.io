@@ -23,7 +23,7 @@ Spring Boot 기반 웹 서비스 개발 경험을 바탕으로 FastAPI, RAG, LLM
 - 해결: 자연어 조건 추출, 오타 보정, pgvector 기반 검색, Advanced Hybrid RAG 재정렬 적용
 - 담당: 자연어 기반 AI 공고 검색, LLM 공고 상세 요약, 관심공고 및 검색조건 관리, 공고 목록/상세/대시보드 UI 개선
 - 기술: React, Spring Boot, FastAPI, PostgreSQL, Redis, pgvector, Docker, Jenkins
-- 자료: [Demo](https://youtu.be/wpKuUTZtILc) / [Team PDF](./assets/bidmatch-team-report.pdf) / [My Part PDF](./assets/bidmatch-my-part.pdf) / [Appendix](./assets/bidmatch-appendix.pdf)
+- 자료: [Demo](https://youtu.be/wpKuUTZtILc) / [Team GitHub](https://github.com/aiHuman1Team) / [Team PDF](./assets/bidmatch-team-report.pdf) / [My Part PDF](./assets/bidmatch-my-part.pdf) / [Appendix](./assets/bidmatch-appendix.pdf)
 
 ### 2. CNN 기반 가구 이미지 분류 시스템
 
