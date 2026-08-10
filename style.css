@@ -972,6 +972,40 @@ iframe.video-frame {
   border: 0;
 }
 
+.demo-focus {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: 0 10px 24px rgba(31, 41, 55, 0.04);
+}
+
+.demo-focus strong {
+  color: var(--teal);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.demo-focus div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.demo-focus span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: var(--soft);
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 800;
+}
+
 .media-strip {
   display: grid;
   gap: 10px;
